@@ -1,3 +1,48 @@
-h1{
-  color: blue;
+/* Global*/
+* {
+  margin: 0;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+.contenedor {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Header */
+.inicio {
+  background-image: url(../img/background.jpg);
+  background-position: center center;
+  background-size: cover;
+  min-height: 160px
+}
+
+.barra {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px;
+}
+
+.navegacion a {
+  color: rgba(255, 255, 255, 0.7);
+  text-decoration: none;
+  margin-right: 10px
+}
+
+.navegacion a:hover {
+  color: rgba(255, 255, 255, 1);
+}
+
+.navegacion a:last-of-type {
+  margin: 0;
+}
+
+#logo {
+  height: 100px;
+  width: 100px;
+  margin: 0;
+  padding: 0;
 }
