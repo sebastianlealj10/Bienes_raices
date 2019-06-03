@@ -18,14 +18,14 @@ img {
   max-width: 100%
 }
 
-.icono-img{
+.icono-img {
   height: 150px;
-  weight: 150px;
+  width: 180px;
 }
 
-.iconos-img{
-  height: 50px;
-  weight: 50px;
+.iconos-img {
+  height: 60px;
+  width: 50px;
 }
 
 .contenedor {
@@ -38,36 +38,70 @@ img {
 }
 
 /** Utilidades **/
+.box-50{
+    flex-basis: calc(50% - 5rem)
+  }
 
+}
 /* Header */
-.inicio {
-  background-image: url(../img/background.jpg);
-  background-position: center center;
-  background-size: cover;
-  min-height: 120px
+.site-header.inicio {
+  margin-bottom: 0rem;
+  background-color: #333333;
+  padding: 0;
+  height: 5%;
+  margin-bottom: 10px;
+}
+
+.site-header{
+  background-color: #333333;
+  padding: 1rem 0 1rem 0;
+  margin-bottom: 30px;
 }
 
 .barra {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-left: 0;
+  height: 100%;
+  width: 100%
 }
 
-.navegacion a {
-  color: rgba(0, 0, 0, 1);
-  text-align: right;
+.icon-name {
+  display: flex;
+  height: 1730;
+}
+
+.icon-name img {
+  height: 20%;
+  width: 20%;
+  min-height: 200px;
+}
+
+.icon-name h1{
+  align-self: center;
+  font-size: 6rem;
+  color: LightGray;
+}
+
+.navegacion{
+  margin-right: 100px;
+}
+
+.navegacion a{
+  font-size: 1.6rem;
   text-decoration: none;
-  margin-right: 10px;
-  font-size: 2rem;
-  font-style: italic;
+  color: LightGray;
+  margin-right: 1rem;
+  mar
 }
 
 .navegacion a:hover {
-  color: rgba(0, 0, 0, 0.6);
+  color: white;
 }
 
 .navegacion a:last-of-type {
-  margin: 0;
+  margin: 0px;
 }
 
 .encabezado-nosotros {
@@ -90,7 +124,6 @@ h3 {
 .seccion {
   margin-top: 2rem;
   margin-bottom: 2rem;
-
 }
 
 #logo {
@@ -98,28 +131,7 @@ h3 {
   width: 10rem;
 }
 
-/** Botones **/
 
-.boton{
-  color: white;
-  font-weight: 700;
-  font-size: 1.4rem;
-  text-decoration: none;
-  padding: 1rem 2rem;
-  margin-top: 3rem;
-  display: inline-block;
-  text-align: center;
-}
-
-.boton-amarillo{
-  background-color: #E08709;
-  display: block;
-}
-
-.boton-azul{
-  margin-top: 0;
-  background-color: #335BFF;
-}
 /** Iconos **/
 .iconos {
   display: flex;
@@ -158,39 +170,200 @@ h3 {
 .contenido-anuncio p {
   margin: 0;
 }
+
 .precio {
-  color: #335BFF;
+  color: MediumSeaGreen;
   font-size: 1.2rem;
   font-weight: 700;
 }
 
-.iconos-caract{
+.iconos-caract {
   list-style: none;
   padding: 0;
   display: flex;
   justify-content: space-evenly;
-
+  height: auto;
 }
-.iconos-caract li{
+
+.iconos-caract li {
   margin-right: 2rem;
+  margin-left: 2rem;
 }
 
 .Mas {
   display: flex;
   justify-content: flex-end;
+  margin-top: 1rem;
 }
 
 /** Contacto Home **/
-.imagen-contacto{
-  background-image: url(../img/contact_background.jpg);
-  background-repeat: no-repeat;
-  background-size:cover;
-  display: flex;
+.imagen-contacto {
+  background-color: LightGray;
 }
-.contenido-contacto{
+
+.contenido-contacto {
   align-items: center;
   flex: 1;
 }
-.contenido-contacto{
-  font-size: 1.8rem;
+
+.contenido-contacto {
+  font-size: 1.6rem;
+}
+
+.seccion-inferior {
+  display: flex;
+  flex-direction: row;
+}
+
+.seccion-inferior .blog {
+  flex-basis: 60%;
+}
+
+.seccion-inferior .comentarios {
+  flex-basis: 40%;
+  font-size: 1.3rem;
+}
+
+.blog h3 {
+  margin-top: : 1;
+  margin-bottom: 0;
+  text-align: center;
+}
+
+.blogs_row {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.3rem;
+}
+
+.entrada-blog {
+  flex-basis: 50%;
+  text-align: center;
+}
+
+.entrada-blog h4 {
+  margin-bottom: 0;
+}
+
+.entrada-blog h4::after {
+  content: '';
+  display: block;
+  width: 90%;
+  height: .2rem;
+  background-color: MediumSeaGreen;
+  align-content: center;
+}
+
+.entrada-blog p:first-of-type {
+  margin-top: 0;
+}
+
+.entrada-blog span {
+  font-style: italic;
+  color: #E08709;
+}
+
+.seccion-inferior .blog img {
+  width: 60%;
+  border-radius: 50%;
+}
+
+/*Comentarios*/
+.comentarios-content {
+  background-color: #E08709;
+  font-size: 2rem;
+  border-radius: 2rem;
+  padding: 1rem;
+}
+
+.comentarios-content p {
+  margin: 0;
+  text-align: right;
+
+}
+
+.comentarios blockquote {
+  margin: 0;
+}
+/**Footer**/
+
+.site-footer{
+  margin-top: 5rem;
+  margin-bottom: 0rem;
+  background-color: #333333;
+  padding: 2.5rem 0;
+  color: white;
+
+}
+.contenedor-footer{
+    color: LightGray;
+    align-items: center;
+}
+.navegacion-footer a{
+  text-decoration: none;
+  color: LightGray;
+}
+
+.descuentos a{
+  text-decoration: none;
+  color: LightGray;
+}
+
+/** Botones **/
+.boton {
+  color: white;
+  font-weight: 700;
+  font-size: 1.4rem;
+  text-decoration: none;
+  padding: 1rem 2rem;
+  margin-top: 3rem;
+  display: inline-block;
+  text-align: center;
+}
+
+.boton-amarillo {
+  background-color: #E08709;
+  display: block;
+}
+
+.boton-azul {
+  margin-top: 0;
+  background-color: MediumSeaGreen;
+}
+
+.nosotros-content{
+  text-align: justify;
+  margin: 2rem 1rem;
+  font-size: 1.5rem;
+}
+.main-tienda {
+  margin: 5px 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.main-nosotros{
+  display: grid;
+  grid-template-columns: 50% 50%;
+  justify-content: space-between;
+  border: 1px solid #B5B5B5;
+  background-color: #F5F5F5;
+}
+.main-nosotros h1 {
+  text-align: center;
+}
+.fundador {
+  align-items: center;
+}
+
+.sebas{
+  height: 420px;
+  width: 400px;
+  margin-top: auto;
+  margin-left: 50px;
+}
+.volver {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 0.5rem;
 }
